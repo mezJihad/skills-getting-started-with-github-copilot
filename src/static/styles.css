@@ -142,3 +142,27 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-section strong {
+  color: #3949ab;
+}
+
+.participants-section ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.participants-section li {
+  color: #0066cc;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.participants-section p {
+  color: #888;
+  margin: 8px 0 0 0;
+}
