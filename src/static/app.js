@@ -21,16 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const spotsLeft = details.max_participants - details.participants.length;
 
         // Create participants list
-        let participantsHTML = `<div class="participants-section" style="margin-top:12px;">
-          <strong style="color:#3949ab;">Participants:</strong>`;
+        let participantsHTML = `<div class="participants-section">
+          <strong>Participants:</strong>`;
         if (details.participants.length > 0) {
-          participantsHTML += `<ul style="margin:8px 0 0 18px; padding:0;">`;
+          participantsHTML += `<ul>`;
           details.participants.forEach(email => {
-            participantsHTML += `<li style="color:#0066cc; font-size:15px; margin-bottom:3px;">${email}</li>`;
+            participantsHTML += `<li>${email}</li>`;
           });
           participantsHTML += `</ul>`;
         } else {
-          participantsHTML += `<p style="color:#888; margin:8px 0 0 0;">No participants yet.</p>`;
+          participantsHTML += `<p>No participants yet.</p>`;
         }
         participantsHTML += `</div>`;
 
